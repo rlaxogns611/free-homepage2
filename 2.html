@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025년 꿈의교회 은사 테스트</title>
+  <style>
+    body {
+      font-family: 'Apple SD Gothic Neo', sans-serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60') no-repeat center center fixed;
+      background-size: cover;
+      padding: 20px; max-width: 700px; margin: auto;
+      color: #003c57;
+      backdrop-filter: blur(3px);
+    }
+    h1 { text-align: center; color: #007c91; margin-bottom: 30px; }
+    .question {
+      background: #ffffffcc; padding: 15px; margin-bottom: 20px;
+      border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .question label { font-weight: bold; display: block; margin-bottom: 10px; }
+    .options label { margin-right: 10px; }
+    .submit-btn {
+      width: 100%; padding: 12px; font-size: 18px;
+      background-color: #007c91; color: white;
+      border: none; border-radius: 8px; cursor: pointer;
+    }
+    .result {
+      margin-top: 40px; padding: 20px;
+      background: #ffffffdd; border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>❄️ 2025년 나의 은사 테스트 ❄️</h1>
+
+  <form id="giftTestForm">
+    <div class="question">
+      <label>1. 나는 새로운 사람에게 예수님을 소개하고 그들이 복음을 받아들이도록 돕고 싶다.</label>
+      <div class="options">
+        <label><input type="radio" name="evangelism" value="1"> 1점</label>
+        <label><input type="radio" name="evangelism" value="2"> 2점</label>
+        <label><input type="radio" name="evangelism" value="3"> 3점</label>
+        <label><input type="radio" name="evangelism" value="4"> 4점</label>
+        <label><input type="radio" name="evangelism" value="5"> 5점</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>2. 나는 성경 말씀이나 신앙적 주제를 쉽게 설명하고 가르치는 것이 즐겁다.</label>
+      <div class="options">
+        <label><input type="radio" name="teaching" value="1"> 1점</label>
+        <label><input type="radio" name="teaching" value="2"> 2점</label>
+        <label><input type="radio" name="teaching" value="3"> 3점</label>
+        <label><input type="radio" name="teaching" value="4"> 4점</label>
+        <label><input type="radio" name="teaching" value="5"> 5점</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>3. 다른 사람을 돕는 일을 뒤에서 묵묵히 맡거나 반복적인 일이라도 기쁨으로 감당할 수 있다.</label>
+      <div class="options">
+        <label><input type="radio" name="serving" value="1"> 1점</label>
+        <label><input type="radio" name="serving" value="2"> 2점</label>
+        <label><input type="radio" name="serving" value="3"> 3점</label>
+        <label><input type="radio" name="serving" value="4"> 4점</label>
+        <label><input type="radio" name="serving" value="5"> 5점</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>4. 나는 사람들과 자원을 잘 조직하고 계획적으로 이끄는 데 자신 있다.</label>
+      <div class="options">
+        <label><input type="radio" name="leadership" value="1"> 1점</label>
+        <label><input type="radio" name="leadership" value="2"> 2점</label>
+        <label><input type="radio" name="leadership" value="3"> 3점</label>
+        <label><input type="radio" name="leadership" value="4"> 4점</label>
+        <label><input type="radio" name="leadership" value="5"> 5점</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>5. 낙심한 사람에게 용기와 소망을 주는 말을 자주 건네는 편이다.</label>
+      <div class="options">
+        <label><input type="radio" name="encouragement" value="1"> 1점</label>
+        <label><input type="radio" name="encouragement" value="2"> 2점</label>
+        <label><input type="radio" name="encouragement" value="3"> 3점</label>
+        <label><input type="radio" name="encouragement" value="4"> 4점</label>
+        <label><input type="radio" name="encouragement" value="5"> 5점</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>6. 누군가의 필요를 보면 물질적으로 돕고 싶다는 마음이 먼저 든다.</label>
+      <div class="options">
+        <label><input type="radio" name="giving" value="1"> 1점</label>
+        <label><input type="radio" name="giving" value="2"> 2점</label>
+        <label><input type="radio" name="giving" value="3"> 3점</label>
+        <label><input type="radio" name="giving" value="4"> 4점</label>
+        <label><input type="radio" name="giving" value="5"> 5점</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>7. 힘들거나 아픈 사람을 보면 마음이 아파서 그냥 지나치지 못한다.</label>
+      <div class="options">
+        <label><input type="radio" name="mercy" value="1"> 1점</label>
+        <label><input type="radio" name="mercy" value="2"> 2점</label>
+        <label><input type="radio" name="mercy" value="3"> 3점</label>
+        <label><input type="radio" name="mercy" value="4"> 4점</label>
+        <label><input type="radio" name="mercy" value="5"> 5점</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>8. 병든 자나 소외된 이들을 오랫동안 돌보는 일에 감동과 사명이 있다.</label>
+      <div class="options">
+        <label><input type="radio" name="compassion" value="1"> 1점</label>
+        <label><input type="radio" name="compassion" value="2"> 2점</label>
+        <label><input type="radio" name="compassion" value="3"> 3점</label>
+        <label><input type="radio" name="compassion" value="4"> 4점</label>
+        <label><input type="radio" name="compassion" value="5"> 5점</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>9. 나는 하나님의 뜻이라 믿으면 상황에 상관없이 믿고 행동할 수 있다.</label>
+      <div class="options">
+        <label><input type="radio" name="faith" value="1"> 1점</label>
+        <label><input type="radio" name="faith" value="2"> 2점</label>
+        <label><input type="radio" name="faith" value="3"> 3점</label>
+        <label><input type="radio" name="faith" value="4"> 4점</label>
+        <label><input type="radio" name="faith" value="5"> 5점</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>10. 나는 하나님께 내 삶 전체를 드리고 싶고, 그러기 위한 기회를 찾고 있다.</label>
+      <div class="options">
+        <label><input type="radio" name="general" value="1"> 1점</label>
+        <label><input type="radio" name="general" value="2"> 2점</label>
+        <label><input type="radio" name="general" value="3"> 3점</label>
+        <label><input type="radio" name="general" value="4"> 4점</label>
+        <label><input type="radio" name="general" value="5"> 5점</label>
+      </div>
+    </div>
+  </form>
+
+  <button class="submit-btn" onclick="calculateResults()">결과 보기</button>
+  <div id="result" class="result"></div>
+
+  <script>
+    function calculateResults() {
+      const data = new FormData(document.getElementById("giftTestForm"));
+      const scores = { 전도:0, 가르침:0, 봉사:0, 리더십:0, 격려:0, 헌금:0, 자비:0, 영험:0, 믿음:0 };
+      for (let [k,v] of data.entries()) {
+        const val = parseInt(v);
+        if (k==='general') {
+          scores['전도']+=val*0.2; scores['헌금']+=val*0.2; scores['리더십']+=val*0.2;
+        } else {
+          const map = {
+            evangelism:'전도', teaching:'가르침', serving:'봉사',
+            leadership:'리더십', encouragement:'격려', giving:'헌금',
+            mercy:'자비', compassion:'영험', faith:'믿음'
+          };
+          scores[map[k]] += val;
+        }
+      }
+      const descriptions = {
+        전도:"복음을 전하고 사람들을 예수님께 인도하는 은사",
+        가르침:"말씀을 명확히 가르치고 설명하는 은사",
+        봉사:"눈에 띄지 않는 자리에서 기꺼이 섬기는 은사",
+        리더십:"사람과 자원을 조직하고 비전을 향해 이끄는 은사",
+        격려:"지친 사람들에게 소망과 위로를 주는 은사",
+        헌금:"물질과 자원을 아낌없이 나누는 은사",
+        자비:"고통받는 이들과 함께 아파하고 돌보는 은사",
+        영험:"병든 자나 소외된 자를 지속적으로 돌보는 은사",
+        믿음:"하나님의 뜻을 확신하고 담대히 순종하는 은사"
+      };
+      const top3 = Object.entries(scores).sort((a,b)=>b[1]-a[1]).slice(0,3);
+      let html = `<h3>✨ 당신의 주요 은사 Top 3 ✨</h3><ol>`;
+      top3.forEach(([name]) => { html+=`<li><strong>${name}</strong>: ${descriptions[name]}</li>`; });
+      html += `</ol>`;
+      document.getElementById("result").innerHTML = html;
+    }
+  </script>
+</body>
+</html>
